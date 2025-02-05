@@ -20,133 +20,597 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.6/minireset.min.css"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsve.css" />
   </head>
-  <body>
-    <!-- Top Bar -->
-    <div class="top-bar">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-sm-8">
-            <div
-              class="d-sm-flex flex-column flex-sm-row gap-2 gap-md-4 d-none"
+  <body class="homeBodyBgImage">
+    <!-- header -->
+    <header class="Header">
+      <!-- top bar -->
+      <div class="topBar">
+        <a href="#" class="HeaderSocialLink hamberger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+
+        <a href="#" class="headerLink"
+          >Qatar Steel Industries Factory (W.L.L)</a
+        >
+
+        <div class="socialTopBarIcons">
+          <a href="#" class="HeaderSocialLink">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a href="#" class="HeaderSocialLink">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="#" class="HeaderSocialLink">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="HeaderSocialImageLink">
+            <img
+              src="./img/arabic-icon.png"
+              alt="arabic-icon"
+              class="arabicicon"
+            />
+          </a>
+          <div class="dropdown">
+            <a
+              class="HeaderSocialLink dropdown-toggle hamberger"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
             >
-              <a href="tel:+97470698916" class="topNavLink">
-                <i class="fa-solid fa-phone"></i> (+974)70698916
-              </a>
-              <a href="mailto:ajay-an@decotechqatar.com" class="topNavLink">
-                <i class="fa-solid fa-envelope"></i> ajay-an@decotechqatar.com
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="socialIcons text-end">
-              <a href="#" class="socialTolLink"
-                ><i class="fa-brands fa-square-facebook"></i
-              ></a>
-              <a href="#" class="socialTolLink"
-                ><i class="fa-brands fa-square-instagram"></i
-              ></a>
-              <a href="#" class="socialTolLink"
-                ><i class="fa-brands fa-square-twitter"></i
-              ></a>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </a>
+            <div class="dropdown-menu">
+              <div class="navContectInfo">
+                <div class="contactInfoContainer">
+                  <h5 class="smHeading">CALL US</h5>
+                  <a href="#" class="contactLink">
+                    <i class="fa-solid fa-phone"></i>
+                    +974 44603365</a
+                  >
+                </div>
+                <div class="contactInfoContainer">
+                  <h5 class="smHeading">EMAIL US</h5>
+                  <a href="#" class="contactLink">
+                    <i class="fa-regular fa-envelope"></i>
+                    info@qatarsteelfactory.com</a
+                  >
+                </div>
+                <div class="contactInfoContainer">
+                  <h5 class="smHeading">FAX</h5>
+                  <a href="#" class="contactLink">
+                    <i class="fa-solid fa-fax"></i>
+                    +974 44606321</a
+                  >
+                </div>
+
+                <a href="#" class="mainBtn">
+                  <i class="fa-solid fa-download"></i>
+                  Catalogue</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg customNav">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="./img/logo.png" alt="Decotech Logo" class="brandLogo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Trading</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
+
+      <!-- navigation bar -->
+      <nav class="navBar">
+        <div class="container-xl">
+          <div class="nabBarContent">
+            <div class="navLogo">
+              <a href="#" class="logoLink">
+                <img src="./img/logo.png" alt="logo" class="brandLogologo" />
+              </a>
+            </div>
+
+            <div class="navContectInfo">
+              <div class="contactInfoContainer">
+                <h5 class="smHeading">CALL US</h5>
+                <a href="#" class="contactLink">
+                  <i class="fa-solid fa-phone"></i>
+                  +974 44603365</a
+                >
+              </div>
+              <div class="contactInfoContainer">
+                <h5 class="smHeading">EMAIL US</h5>
+                <a href="#" class="contactLink">
+                  <i class="fa-regular fa-envelope"></i>
+                  info@qatarsteelfactory.com</a
+                >
+              </div>
+              <div class="contactInfoContainer">
+                <h5 class="smHeading">FAX</h5>
+                <a href="#" class="contactLink">
+                  <i class="fa-solid fa-fax"></i>
+                  +974 44606321</a
+                >
+              </div>
+
+              <a href="#" class="mainBtn">
+                <i class="fa-solid fa-download"></i>
+                Catalogue</a
               >
-                Manufacturing
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- nav list -->
+      <nav class="navListBar">
+        <!-- close sm menu -->
+        <i class="fa-solid fa-rectangle-xmark closeIcon" id="closeNavList"></i>
+        <div class="container">
+          <ul class="navList">
+            <li class="navitem">
+              <a href="#" class="navLink">HOME</a>
+            </li>
+            <li class="navitem">
+              <a href="#" class="navLink">ABOUT US</a>
+            </li>
+            <li class="dropdown navitem">
+              <a
+                class="navLink dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                PRODUCTS
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Option 1</a></li>
-                <li><a class="dropdown-item" href="#">Option 2</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"> All PRODUCTS LIST</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >ROOF / WALL / FLOOR PANELS</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >TUBES/PIPES/HOLLOW SECTIONS</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >FENCING NETS AND BARBED WIRE</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">CEILING FRAME SOLUTIONS</a>
+                </li>
+                <li><a class="dropdown-item" href="#">C & Z PIRLINS</a></li>
+                <li><a class="dropdown-item" href="#">FLAT PRODUCTS</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">WALL FRAME SOLUTIONS</a>
+                </li>
+                <li><a class="dropdown-item" href="#">COILS</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">ROOFING ACCESSORIES</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">SELF DRILLING SCREWS</a>
+                </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Major Approvals</a>
+            <li class="dropdown navitem">
+              <a
+                class="navLink dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                SERVICES
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">FABRICATION SERVICES</a>
+                </li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+            <li class="navitem">
+              <a href="#" class="navLink">QUALITY</a>
+            </li>
+            <li class="navitem">
+              <a href="#" class="navLink">PHOTO GALLERY</a>
+            </li>
+            <li class="navitem">
+              <a href="#" class="navLink">NEWS</a>
+            </li>
+            <li class="navitem">
+              <a href="#" class="navLink">CAREERS</a>
+            </li>
+            <li class="navitem">
+              <a href="#" class="navLink">BLOG</a>
+            </li>
+            <li class="dropdown navitem">
+              <a
+                class="navLink dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                CONTACT
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">GET IN TOUCH</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">VENDOR REGISTRATION</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navitem">
+              <a href="#" class="navLink">
+                <span class="notification">0</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </a>
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
-    <!-- Hero Section -->
-    <div class="hero-section">
-      <div class="hero-content">
-        <h1 class="hero-title">Blockwork & Plastering</h1>
-      </div>
-    </div>
+      </nav>
+    </header>
 
-    <section class="whatWeDoSection">
+    <!-- Hero Section -->
+    <section class="heroSection">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="whatweDoContent">
-              <h3 class="sectionTitle">What We Do</h3>
-              <h2 class="mainHeading">
-                BLOCKWORK & PLASTERING<br />ACCESSORIES
-              </h2>
-              <p class="descriptionText">
-                We are pleased to introduced ourselves, Decotech metal profile
-                factory, as leading manufacturer and supplier of comprehensive
-                range of building that include expanded metal products,
-                partition ceiling profile and cable tray management systems,
-                under our brand name DECOTECH.
-              </p>
-              <button class="btn catalogueBtn text-white">
-                Blockwork and Plastering Catalogue
-              </button>
+        <div class="playIconContainer">
+          <button
+            class="palyIconBtn"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <div class="btnCircle"></div>
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Structure -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="whatWeDoImageContainer">
-              <img
-                src="./img/what_we_do_img.png"
-                alt="Blockwork and Plastering Products"
-                class="productImage"
-              />
+            <div class="modal-body">
+              <iframe
+                class="youtubeVideo"
+                src="https://www.youtube.com/embed/nyxxI6J0MrE"
+                title="Qatar Steel Industries Factory Company Profile"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- what we do -->
+    <section class="TeamInfo">
+      <!-- Carousel Container -->
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <!-- First Slide -->
+          <div class="carousel-item active">
+            <div class="carousel-content text-center container">
+              <h2 class="mdHeading">WHAT WE DO</h2>
+              <p class="mainText">
+                We are Qatar's leading steel supplier and manufacturer of: MS /
+                GI Square / Rectangular / Round ERW and Hollow Pipes / Tubes |
+                GI Corrugated Roofing Sheets | PU foam Insulated Sandwich Roof /
+                Wall Panels | Angle | MS I BEAMS | MS U Channels | MS Flat Bars
+                | C & Z Purlins | Decking Sheet | Chain Link Fencing | HR / CR /
+                Chequered Coils and Sheets | GI Coils / Sheets | Chequered
+                Sheets | Main & Cross Tee / Wall Angle Profiles / Main Channels
+                / Furring Channel / Studs and Runners; and much more under one
+                roof.
+              </p>
+            </div>
+          </div>
+          <!-- Second Slide -->
+          <div class="carousel-item">
+            <div class="carousel-content text-center container">
+              <h2 class="mdHeading">ABOUT US</h2>
+              <p class="mainText">
+                Qatar Steel Company established in 1980, we have carved an
+                unparalleled position in Qatar Market by making relentless
+                endeavour to cater to our clients with premium quality steel
+                products. Our excellence in engineering, a genuine team spirit,
+                clear objectives, ethical business practices and well defined
+                goals have infused an accelerated growth in the market expansion
+                of our company. Moreover the hard earned reputation for quality
+                products and services as steel suppliers has helped the company
+                in enhancing its customer base.
+              </p>
+            </div>
+          </div>
+          <!-- Third Slide -->
+          <div class="carousel-item">
+            <div class="carousel-content text-center container">
+              <h2 class="mdHeading">MISSION & STRATEGY</h2>
+              <p class="mainText">
+                Qatar Steel Industries Factory is committed to principles of
+                sustainability while exploiting innovative technology to its
+                fullest in order to ensure the satisfaction of consumers’ needs
+                in the global market scale. This commitment is aimed at
+                enhancing the quality of life for everyone now and for future
+                generations.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-content text-center container">
+              <h2 class="mdHeading">OUR VISION</h2>
+              <p class="mainText">
+                Our visions work as a blueprint to how we would like to build
+                and grow every part of our organization by taking into
+                consideration each vision when conducting business, in order to
+                achieve the highest quality of service and satisfaction both by
+                our customers and employees.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- product section -->
+    <section class="productSection">
+      <h2 class="mdHeading">OUR PRODUCTS</h2>
+
+      <!-- Swiper -->
+      <div class="swiper productSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="sliderItem">
+              <img
+                src="./img/product_slider_1.png"
+                alt="Metal pipes"
+                class="productImage"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sliderItem">
+              <img
+                src="./img/product_slider_2.png"
+                alt="Angular metal sheets"
+                class="productImage"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sliderItem">
+              <img
+                src="./img/product_slider_3.png"
+                alt="Stacked metal plates"
+                class="productImage"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sliderItem">
+              <img
+                src="./img/product_slider_4.png"
+                alt="Sheet metal"
+                class="productImage"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sliderItem">
+              <img
+                src="./img/product_slider_5.png"
+                alt="Metal angles"
+                class="productImage"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sliderItem">
+              <img
+                src="./img/product_slider_6.png"
+                alt="Metal bars"
+                class="productImage"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sliderItem">
+              <img
+                src="./img/product_slider_9.png"
+                alt="Metal channel sections"
+                class="productImage"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="sliderItem">
+              <img
+                src="./img/product_slider_8.png"
+                alt="Metal channel sections"
+                class="productImage"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="swiperPrevBtn"></div>
+        <div class="swiperNextBtn"></div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footerWrapper">
+      <div class="container footerContainer">
+        <div class="row footerRow">
+          <!-- Company Info Column -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="footerColumn">
+              <h3 class="footerTitle">
+                QATAR STEEL INDUSTRIES FACTORY (W.L.L)
+              </h3>
+              <p class="footerText">
+                Established in 1980, we have carved an unparalleled position in
+                Qatar Market by making relentless endeavor to cater to our
+                clients with premium quality steel products.
+              </p>
+              <div class="socialLinks">
+                <a href="#" class="socialIcon"
+                  ><i class="fab fa-facebook-f socialIconInner"></i
+                ></a>
+                <a href="#" class="socialIcon"
+                  ><i class="fab fa-linkedin-in socialIconInner"></i
+                ></a>
+                <a href="#" class="socialIcon"
+                  ><i class="fab fa-instagram socialIconInner"></i
+                ></a>
+                <a href="#" class="socialIcon"
+                  ><i class="fab fa-twitter socialIconInner"></i
+                ></a>
+                <a href="#" class="socialIcon"
+                  ><i class="fab fa-pinterest-p socialIconInner"></i
+                ></a>
+                <a href="#" class="socialIcon"
+                  ><i class="fab fa-tumblr socialIconInner"></i
+                ></a>
+                <a href="#" class="socialIcon"
+                  ><i class="fab fa-youtube socialIconInner"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Latest News Column -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="footerColumn">
+              <h3 class="footerTitle">LATEST NEWS</h3>
+              <div class="newsItem">
+                <p class="footerText">
+                  Qatar Steel International FZE is the new division of QSIF and
+                  the company is mainly supplier of Hot Rolled Steel Sheets and
+                  Coils in the GCC and African Market.
+                </p>
+                <a href="#" class="readMore">Read More →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Column -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="footerColumn">
+              <h3 class="footerTitle">HOME</h3>
+              <ul class="footerLinks">
+                <li class="footerLinkItem">
+                  <a href="#" class="footerLink">About Us</a>
+                </li>
+                <li class="footerLinkItem">
+                  <a href="#" class="footerLink">Products</a>
+                </li>
+                <li class="footerLinkItem">
+                  <a href="#" class="footerLink">Photo Gallery</a>
+                </li>
+                <li class="footerLinkItem">
+                  <a href="#" class="footerLink">News</a>
+                </li>
+                <li class="footerLinkItem">
+                  <a href="#" class="footerLink">Careers</a>
+                </li>
+                <li class="footerLinkItem">
+                  <a href="#" class="footerLink">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact Info Column -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <div class="footerColumn">
+              <h3 class="footerTitle">CONTACT INFO</h3>
+              <ul class="contactInfo">
+                <li class="contactItem">
+                  <a href="#" class="contactLink">
+                    <i class="fas fa-building contactIcon"></i>
+                    <span class="contactText"
+                      >Qatar Steel Industries Factory (W.L.L)</span
+                    >
+                  </a>
+                </li>
+                <li class="contactItem">
+                  <a href="#" class="contactLink">
+                    <i class="fas fa-map-marker-alt contactIcon"></i>
+                    <span class="contactText"
+                      >Building 177, Zone 57, Street 15, Industrial Area, Al
+                      Rayan, Qatar</span
+                    >
+                  </a>
+                </li>
+                <li class="contactItem">
+                  <a href="tel:+97444605365" class="contactLink">
+                    <i class="fas fa-phone contactIcon"></i>
+                    <span class="contactText">+974 4460 5365</span>
+                  </a>
+                </li>
+                <li class="contactItem">
+                  <a href="tel:+97444606321" class="contactLink">
+                    <i class="fas fa-fax contactIcon"></i>
+                    <span class="contactText">+974 4460 6321</span>
+                  </a>
+                </li>
+                <li class="contactItem">
+                  <a
+                    href="mailto:info@qatarsteelfactory.com"
+                    class="contactLink"
+                  >
+                    <i class="fas fa-envelope contactIcon"></i>
+                    <span class="contactText">info@qatarsteelfactory.com</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="copyrightSection">
+        <div class="container copyrightContainer">
+          <p class="copyrightText">
+            © 1980 - 2025 Qatar Steel Industries Factory (W.L.L) All rights
+            reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
@@ -154,5 +618,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

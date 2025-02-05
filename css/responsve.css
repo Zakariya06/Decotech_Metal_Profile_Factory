@@ -1,0 +1,107 @@
+/* media */
+@media screen and (max-width: 1200px) {
+  .topBar {
+    padding-right: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* topBar */
+  .topBar {
+    position: static;
+    right: 0;
+    padding: 0.4rem 0.8rem;
+    width: 100%;
+    top: 0rem;
+  }
+  .topBar::after {
+    display: none;
+  }
+  .navContectInfo {
+    display: none;
+  }
+  .nabBarContent {
+    justify-content: center;
+  }
+  .hamberger {
+    display: block;
+  }
+  .dropdown-menu .navContectInfo {
+    display: flex;
+  }
+  .headerLink {
+    display: none;
+  }
+  .navListBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999999;
+    width: 0%;
+    height: 100vh;
+    padding: 1rem 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all 0.3s ease-out;
+  }
+  .navListBar.show {
+    width: 100%;
+  }
+  .navList {
+    flex-direction: column;
+  }
+  .navitem {
+    padding: 0.4rem;
+    border: none;
+    border-bottom: 1px solid #efefef;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .closeIcon {
+    display: block;
+    color: #efefef;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0.6rem;
+    right: 1rem;
+  }
+  .whatWeDoSection {
+    padding: 4rem 0;
+  }
+  .sectionTitle {
+    font-size: 0.9rem;
+  }
+  .mainHeading {
+    font-size: 1.5rem;
+  }
+  .descriptionText {
+    font-size: 0.9rem;
+  }
+  .catalogueBtn {
+    padding: 0.5rem 1rem;
+    font-size: 0.87rem;
+    transition: background-color 0.3s ease;
+  }
+  .catalogueBtn:hover {
+    background-color: #e66611;
+  }
+
+  /* TeamInfo */
+  .TeamInfo {
+    padding: 4rem 0;
+  }
+  .mdHeading {
+    font-size: 1.4rem;
+  }
+  .mainText {
+    font-size: 0.8rem;
+  }
+  /* productSection */
+  .productSection {
+    padding: 2rem 1rem;
+  }
+  .productSwiper {
+    padding: 1rem 0rem;
+  }
+}
