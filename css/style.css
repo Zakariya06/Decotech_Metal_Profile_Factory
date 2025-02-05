@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+:root {
+  --main_color: #fff;
+  --secondary_color: #000;
+}
+body {
+  background-color: var(--main_color);
+  font-family: "Poppins", serif;
+}
+a {
+  text-decoration: none;
+}
+
+.top-bar {
+  background-color: #1a337e;
+  color: white;
+  padding: 8px 0;
+  font-size: 14px;
+}
+.topNavLink {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+.topNavLink:hover {
+  text-decoration: underline;
+}
+.socialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.socialTolLink {
+  font-size: 1.5rem;
+  color: #fff;
+  display: block;
+  transition: all 0.2s ease;
+}
+.socialTolLink:hover {
+  transform: translateY(-5px);
+}
+.customNav {
+  padding: 1rem 0;
+  background-color: white;
+}
+.customNav .nav-link {
+  color: #1a337e;
+  font-weight: 500;
+  padding: 0 1rem !important;
+  transition: all 0.2s ease;
+}
+.customNav .nav-link.active,
+.customNav .nav-link:hover {
+  color: #ff6b00;
+}
+.brandLogo {
+  width: 260px;
+  height: auto;
+}
+.hero-section {
+  background-image: url("../img/hero_bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.hero-title {
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* whatWeDoSection */
+.whatWeDoSection {
+  padding: 8rem 0;
+}
+.sectionTitle {
+  color: #ff7722;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+.mainHeading {
+  color: #002b5b;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.descriptionText {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.catalogueBtn {
+  background-color: #ff7722;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+.catalogueBtn:hover {
+  background-color: #e66611;
+}
+.productImage {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .top-bar {
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  .brandLogo {
+    width: 160px;
+    height: auto;
+  }
+
+  
+.whatWeDoSection {
+    padding: 4rem 0;
+  }
+  .sectionTitle { 
+    font-size: 0.9rem; 
+  }
+  .mainHeading { 
+    font-size: 1.5rem; 
+  }
+  .descriptionText { 
+    font-size: 0.9rem; 
+  }
+  .catalogueBtn { 
+    padding: 0.5rem 1rem;
+    font-size: 0.87rem;
+    transition: background-color 0.3s ease;
+  }
+  .catalogueBtn:hover {
+    background-color: #e66611;
+  } 
+  
+}
