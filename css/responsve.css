@@ -104,4 +104,28 @@
   .productSwiper {
     padding: 1rem 0rem;
   }
+  .aboutUsContent .mainText {
+    font-size: 0.9rem;
+  }
+  .lgHeading {
+    font-size: 2rem;
+  } 
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+  .subTitle {
+    font-size: 0.86rem;
+  }
+  .productTitle {
+    padding: 10px 6px;
+    font-size: 0.98rem;
+    bottom: 45px;
+  }
+  .buttonContainer {
+    padding: 10px 6px;
+  }
+  .viewButton {
+    padding: 4px 12px;
+    font-size: 0.8rem;
+  }
 }
