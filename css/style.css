@@ -7,7 +7,7 @@ html {
 :root {
   --main_color: #fff;
   --secondary_color: #000;
-  --theme_color: #ff7722;
+  --theme_color: #ffcd43;
   --primary_color: #122d6f;
   --btn_color: #830c0f;
 }
@@ -182,9 +182,11 @@ a {
   text-transform: uppercase;
   position: relative;
   display: block;
+  transition: all 0.3s ease;
 }
-.navLink:hover {
-  color: #efefef;
+.navLink:hover,
+.navLink.active {
+  color: var(--theme_color);
 }
 .navLink i {
   font-size: 1.3rem;
@@ -574,7 +576,7 @@ footer .contactLink:hover {
 }
 .productCard:hover .productImage {
   transform: scale(1.1);
-} 
+}
 .productCard:hover .productTitle {
   padding-bottom: 2rem;
 }
