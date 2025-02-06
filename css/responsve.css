@@ -128,4 +128,22 @@
     padding: 4px 12px;
     font-size: 0.8rem;
   }
+  .qualityHeroSection{
+    padding: 4rem 0;
+  }
+  .qualityHeroSection .row{
+    row-gap: 2rem;
+  }
+  .subHeading {
+    font-size: 0.8rem; ;
+  }
+  .logoText { 
+    font-size: 0.7rem; 
+  }
+  .certificateSection{
+    padding: 4rem 0;
+  }
+  .certificateSection .row{
+    row-gap: 1rem;
+  }
 }

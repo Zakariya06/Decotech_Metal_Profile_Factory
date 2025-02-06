@@ -488,7 +488,7 @@ footer .contactLink:hover {
   justify-content: flex-start;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
+  height: 400px;
 }
 .aboutUsContent .mainText {
   font-size: 1.2rem;
@@ -616,4 +616,69 @@ footer .contactLink:hover {
 .viewButton:hover {
   background: var(--theme_color);
   color: var(--main_color);
+}
+
+/* quality page  */
+.qualityHeroSection {
+  padding: 7rem 0;
+  background-image: url("../img/quality-bg1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.certificationImage {
+  border-radius: 50%;
+}
+.subHeading {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* brand logoes section */
+.logoWrapper {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+.logoBox {
+  position: relative;
+  margin: 1rem 0;
+}
+.logoLink {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logoImage {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+.logoOverlay {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  right: 0;
+  z-index: 9999;
+  transform: translateY(10px) translateX(-50%);
+  background-color: var(--btn_color);
+  padding: 10px;
+  opacity: 0;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.logoText {
+  color: var(--main_color);
+  margin: 0;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.logoBox:hover .logoOverlay {
+  transform: translateY(0px) translateX(-50%);
+  opacity: 1;
+}
+
+/* certificateSection */
+.certificateSection{
+  padding: 8rem 0;
 }
