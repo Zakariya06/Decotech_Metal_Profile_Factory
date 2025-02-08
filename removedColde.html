@@ -161,8 +161,6 @@
   </ul>
 </li>
 
-
-
 <li class="dropdown navitem">
   <a
     class="navLink dropdown-toggle"
@@ -179,3 +177,180 @@
     </li>
   </ul>
 </li>
+
+<li class="navitem">
+  <a href="#" class="navLink">
+    <span class="notification">0</span>
+    <i class="fa-solid fa-cart-plus"></i>
+  </a>
+</li>
+
+
+   <!-- logoes section -->
+   <section class="brandLogoesSection">
+    <div class="row">
+      <div class="col-12">
+        <div class="logoWrapper py-4">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-6 col-md-3 col-lg">
+              <div class="logoBox">
+                <a href="#" class="logoLink">
+                  <img
+                    src="./img/brand_logo_1.png"
+                    alt="Certification Logo"
+                    class="logoImage"
+                  />
+                  <div class="logoOverlay">
+                    <p class="logoText">Certified Quality Management</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg">
+              <div class="logoBox">
+                <a href="#" class="logoLink">
+                  <img
+                    src="./img/brand_logo_2.png"
+                    alt="LABC Logo"
+                    class="logoImage"
+                  />
+                  <div class="logoOverlay">
+                    <p class="logoText">LABC Certified</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg">
+              <div class="logoBox">
+                <a href="#" class="logoLink">
+                  <img
+                    src="./img/brand_logo_3.png"
+                    alt="FMB Logo"
+                    class="logoImage"
+                  />
+                  <div class="logoOverlay">
+                    <p class="logoText">FMB Member</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg">
+              <div class="logoBox">
+                <a href="#" class="logoLink">
+                  <img
+                    src="./img/brand_logo_4.png"
+                    alt="Alcumus Logo"
+                    class="logoImage"
+                  />
+                  <div class="logoOverlay">
+                    <p class="logoText">Alcumus Certified</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg">
+              <div class="logoBox">
+                <a href="#" class="logoLink">
+                  <img
+                    src="./img/brand_logo_5.png"
+                    alt="CE Mark"
+                    class="logoImage"
+                  />
+                  <div class="logoOverlay">
+                    <p class="logoText">CE Certified</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg">
+              <div class="logoBox">
+                <a href="#" class="logoLink">
+                  <img
+                    src="./img/brand_logo_6.png"
+                    alt="IAF Logo"
+                    class="logoImage"
+                  />
+                  <div class="logoOverlay">
+                    <p class="logoText">IAF Accredited</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg">
+              <div class="logoBox">
+                <a href="#" class="logoLink">
+                  <img
+                    src="./img/brand_logo_7.png"
+                    alt="IAF Logo"
+                    class="logoImage"
+                  />
+                  <div class="logoOverlay">
+                    <p class="logoText">IAF Accredited</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg">
+              <div class="logoBox">
+                <a href="#" class="logoLink">
+                  <img
+                    src="./img/brand_logo_8.png"
+                    alt="IAF Logo"
+                    class="logoImage"
+                  />
+                  <div class="logoOverlay">
+                    <p class="logoText">IAF Accredited</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+/* brand logoes section */
+.logoWrapper {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+.logoBox {
+  position: relative;
+  margin: 1rem 0;
+}
+.logoLink {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logoImage {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+.logoOverlay {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  right: 0;
+  z-index: 9999;
+  transform: translateY(10px) translateX(-50%);
+  background-color: var(--btn_color);
+  padding: 10px;
+  opacity: 0;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.logoText {
+  color: var(--main_color);
+  margin: 0;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.logoBox:hover .logoOverlay {
+  transform: translateY(0px) translateX(-50%);
+  opacity: 1;
+}

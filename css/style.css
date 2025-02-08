@@ -228,8 +228,8 @@ a {
 /* heroSection */
 .heroSection {
   width: 100%;
-  height: 500px;
-  background-image: url("../img/hero_section_bg.png");
+  padding: 7rem 0;
+  background-image: url("../img/img/hero_section_bg.png");
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -237,16 +237,31 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  isolation: isolate;
+  text-align: center;
+}
+.heroSection::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
 }
 .playIconContainer {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 .palyIconBtn {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background: radial-gradient(
     rgba(255, 0, 35, 0.8) 60%,
     rgba(255, 255, 255, 1) 62%
@@ -254,7 +269,6 @@ a {
   border-radius: 50%;
   position: relative;
   display: block;
-  margin: 40px 0px;
   box-shadow: 0px 0px 25px 3px #fff;
   user-select: none;
   -webkit-user-drag: none;
@@ -265,7 +279,7 @@ a {
   position: relative;
 }
 .palyIconBtn i {
-  font-size: 2rem;
+  font-size: 1rem;
   color: #fff;
 }
 .btnCircle {
@@ -288,9 +302,35 @@ a {
     opacity: 1;
   }
 }
+.playIconContainer .loadMore {
+  margin: 0;
+}
 .youtubeVideo {
   width: 100%;
   height: 400px;
+}
+.mainHeading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--main_color);
+}
+.heroTextContent .mainText {
+  font-size: 1.3rem;
+  color: var(--theme_color);
+  font-weight: 500;
+}
+.heroTextContent .smtext {
+  margin-top: 0.4rem;
+  color: #fff;
+}
+.heroTextContent .subHeading {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  color: var(--theme_color);
+}
+.heroSection .loadMore {
+  width: fit-content;
 }
 
 /* TeamInfo */
@@ -391,6 +431,7 @@ a {
   font-weight: bold;
   margin-bottom: 20px;
   color: #ffffff;
+  text-transform: uppercase;
 }
 .footerText {
   font-size: 14px;
@@ -456,9 +497,10 @@ footer .contactLink {
 footer .contactLink:hover {
   color: #ffffff;
 }
-.contactIcon {
+footer .contactIcon {
   margin-right: 10px;
   margin-top: 5px;
+  color: #fff;
 }
 .contactText {
   flex: 1;
@@ -548,7 +590,6 @@ footer .contactLink:hover {
 
 /* product page */
 .productsPageSection {
-  background-color: #f9f5f0;
   padding: 4rem 0;
   position: relative;
 }
@@ -563,37 +604,23 @@ footer .contactLink:hover {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
+.reversedRow {
+  flex-direction: row-reverse;
+}
 .productCard {
   position: relative;
   margin-bottom: 1.8rem;
   border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.productImage {
+.productsPageSection .productImage {
   width: 100%;
-  height: 300px;
   object-fit: cover;
-  transition: all 0.3s ease-in;
-}
-.productCard:hover .productImage {
-  transform: scale(1.1);
-}
-.productCard:hover .productTitle {
-  padding-bottom: 2rem;
+  box-shadow: none;
 }
 .productTitle {
-  position: absolute;
-  bottom: 50px;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 10px;
-  margin: 0;
-  text-align: left;
-  font-size: 1rem;
-  transition: all 0.3s ease;
+  color: var(--btn_color);
+  font-size: 2rem;
+  font-weight: 600;
 }
 .buttonContainer {
   position: absolute;
@@ -627,57 +654,10 @@ footer .contactLink:hover {
   background-size: cover;
   background-attachment: fixed;
 }
-.certificationImage {
-  border-radius: 50%;
-}
 .subHeading {
   font-size: 1rem;
   font-weight: 500;
   color: #fff;
-}
-
-/* brand logoes section */
-.logoWrapper {
-  background-color: #f8f9fa;
-  padding: 20px 0;
-}
-.logoBox {
-  position: relative;
-  margin: 1rem 0;
-}
-.logoLink {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.logoImage {
-  width: 50%;
-  height: auto;
-  margin: 0 auto;
-}
-.logoOverlay {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  right: 0;
-  z-index: 9999;
-  transform: translateY(10px) translateX(-50%);
-  background-color: var(--btn_color);
-  padding: 10px;
-  opacity: 0;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-.logoText {
-  color: var(--main_color);
-  margin: 0;
-  font-size: 0.8rem;
-  text-align: center;
-}
-.logoBox:hover .logoOverlay {
-  transform: translateY(0px) translateX(-50%);
-  opacity: 1;
 }
 
 /* certificateSection */
@@ -752,7 +732,7 @@ footer .contactLink:hover {
 }
 .newsCard {
   position: relative;
-  max-width: 350px;
+  max-width: 550px;
   width: 100%;
   background: #fff;
   border-radius: 2px;
@@ -766,7 +746,7 @@ footer .contactLink:hover {
 }
 .cardImage img {
   width: 100%;
-  height: 250px;
+  height: 400px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -778,35 +758,17 @@ footer .contactLink:hover {
   bottom: 0;
   background: rgba(0, 0, 0, 0.7);
   color: var(--main_color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 20px;
   font-size: 0.9rem;
-  text-align: center;
+  text-align: left;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-.cardImage:hover img {
-  transform: scale(1.05);
-}
-.cardImage:hover .hiddenText {
-  opacity: 1;
-}
-.cardContent {
-  padding: 15px;
-}
-.cardTitle {
-  font-size: 18px;
-  color: #333;
-  margin: 0;
-  text-align: center;
-}
-.lastUpdated {
-  font-size: 12px;
-  color: #666;
-  text-align: center;
-  margin-top: 10px;
+
+.newImage {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
 }
 .loadMore {
   display: block;
@@ -825,31 +787,25 @@ footer .contactLink:hover {
 
 /* contact page */
 .contactSection {
-  background-color: #f9f3e9;
   padding: 5rem 0;
   width: 100%;
   height: 100%;
 }
 .companyInfo {
-  background-color: #fff;
   padding: 30px;
   border-radius: 8px;
   height: 100%;
 }
+.companyInfo .mainText {
+  margin-bottom: 2rem;
+  margin-top: 0.2rem;
+}
 .contactForm {
-  background-color: #fff;
+  background-color: #f9f3e9;
   padding: 30px;
   border-radius: 8px;
   width: 100%;
   height: 100%;
-}
-.departmentTitle {
-  color: #8b0000;
-  font-size: 0.9rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #8b0000;
-  padding-bottom: 5px;
 }
 .contactItem {
   margin-bottom: 15px;
