@@ -26,90 +26,41 @@
     <link rel="stylesheet" href="./css/responsve.css" />
   </head>
   <body class="homeBodyBgImage">
-      <!-- header -->
-      <header class="Header">
-        <!-- top bar -->
-        <div class="topBar">
-          <a href="#" class="HeaderSocialLink hamberger" id="hamburger">
-            <i class="fa-solid fa-bars"></i>
+    <!-- header -->
+    <header class="Header">
+      <!-- top bar -->
+      <div class="topBar">
+        <a href="#" class="HeaderSocialLink hamberger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+
+        <a href="./index.html" class="headerLink"
+          >Decotech Metal Profile Factory
+        </a>
+
+        <div class="socialTopBarIcons">
+          <a
+            href="https://www.facebook.com/decotech.decoration/"
+            class="HeaderSocialLink"
+          >
+            <i class="fa-brands fa-square-facebook"></i>
           </a>
-  
-          <a href="./index.html" class="headerLink"
-            >Decotech Metal Profile Factory
+          <a
+            href="https://www.instagram.com/decotech.hq/"
+            class="HeaderSocialLink"
+          >
+            <i class="fa-brands fa-instagram"></i>
           </a>
-  
-          <div class="socialTopBarIcons">
+          <div class="dropdown">
             <a
-              href="https://www.facebook.com/decotech.decoration/"
-              class="HeaderSocialLink"
+              class="HeaderSocialLink dropdown-toggle hamberger"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
             >
-              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
             </a>
-            <a
-              href="https://www.instagram.com/decotech.hq/"
-              class="HeaderSocialLink"
-            >
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <div class="dropdown">
-              <a
-                class="HeaderSocialLink dropdown-toggle hamberger"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-              </a>
-              <div class="dropdown-menu">
-                <div class="navContectInfo">
-                  <div class="contactInfoContainer">
-                    <h5 class="smHeading">CALL US</h5>
-                    <a href="tel:+97440012053" class="contactLink">
-                      <i class="fa-solid fa-phone"></i>
-                      +974-40012053
-                    </a>
-                  </div>
-                  <div class="contactInfoContainer">
-                    <h5 class="smHeading">EMAIL US</h5>
-                    <a
-                      href="mailto::profilefactory@decotechqatar.com"
-                      class="contactLink"
-                    >
-                      <i class="fa-regular fa-envelope"></i>
-                      profilefactory@decotechqatar.com</a
-                    >
-                  </div>
-                  <div class="contactInfoContainer">
-                    <h5 class="smHeading">FAX</h5>
-                    <a href="tel:+97444604338" class="contactLink">
-                      <i class="fa-solid fa-fax"></i>
-                      +974-44604338</a
-                    >
-                  </div>
-                  <a
-                    href="./pdf/DECOTECH BROCHURE (2024) - compressed.pdf"
-                    class="mainBtn"
-                    download
-                  >
-                    <i class="fa-solid fa-download"></i>
-                    Catalogue</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <!-- navigation bar -->
-        <nav class="navBar">
-          <div class="container-xl">
-            <div class="nabBarContent">
-              <div class="navLogo">
-                <a href="#" class="logoLink">
-                  <img src="./img/logo.png" alt="logo" class="brandLogologo" />
-                </a>
-              </div>
-  
+            <div class="dropdown-menu">
               <div class="navContectInfo">
                 <div class="contactInfoContainer">
                   <h5 class="smHeading">CALL US</h5>
@@ -132,10 +83,9 @@
                   <h5 class="smHeading">FAX</h5>
                   <a href="tel:+97444604338" class="contactLink">
                     <i class="fa-solid fa-fax"></i>
-                    +974-44604338
-                  </a>
+                    +974-44604338</a
+                  >
                 </div>
-  
                 <a
                   href="./pdf/DECOTECH BROCHURE (2024) - compressed.pdf"
                   class="mainBtn"
@@ -147,39 +97,89 @@
               </div>
             </div>
           </div>
-        </nav>
-  
-        <!-- nav list -->
-        <nav class="navListBar">
-          <!-- close sm menu -->
-          <i class="fa-solid fa-rectangle-xmark closeIcon" id="closeNavList"></i>
-          <div class="container">
-            <ul class="navList">
-              <li class="navitem">
-                <a href="./index.html" class="navLink ">HOME</a>
-              </li>
-              <li class="navitem">
-                <a href="./aboutUs.html" class="navLink">ABOUT US</a>
-              </li>
-              <li class="navitem">
-                <a class="navLink active" href="./products.html"> PRODUCTS </a>
-              </li>
-              <li class="dropdown navitem">
-                <a class="navLink" href="./services.html"> SERVICES </a>
-              </li>
-              <li class="navitem">
-                <a href="./quality.html" class="navLink">QUALITY</a>
-              </li>
-              <li class="navitem">
-                <a href="./news.html" class="navLink">NEWS</a>
-              </li>
-              <li class="dropdown navitem">
-                <a class="navLink" href="./contact.html"> CONTACT </a>
-              </li>
-            </ul>
+        </div>
+      </div>
+
+      <!-- navigation bar -->
+      <nav class="navBar">
+        <div class="container-xl">
+          <div class="nabBarContent">
+            <div class="navLogo">
+              <a href="#" class="logoLink">
+                <img src="./img/logo.png" alt="logo" class="brandLogologo" />
+              </a>
+            </div>
+
+            <div class="navContectInfo">
+              <div class="contactInfoContainer">
+                <h5 class="smHeading">CALL US</h5>
+                <a href="tel:+97440012053" class="contactLink">
+                  <i class="fa-solid fa-phone"></i>
+                  +974-40012053
+                </a>
+              </div>
+              <div class="contactInfoContainer">
+                <h5 class="smHeading">EMAIL US</h5>
+                <a
+                  href="mailto::profilefactory@decotechqatar.com"
+                  class="contactLink"
+                >
+                  <i class="fa-regular fa-envelope"></i>
+                  profilefactory@decotechqatar.com</a
+                >
+              </div>
+              <div class="contactInfoContainer">
+                <h5 class="smHeading">FAX</h5>
+                <a href="tel:+97444604338" class="contactLink">
+                  <i class="fa-solid fa-fax"></i>
+                  +974-44604338
+                </a>
+              </div>
+
+              <a
+                href="./pdf/DECOTECH BROCHURE (2024) - compressed.pdf"
+                class="mainBtn"
+                download
+              >
+                <i class="fa-solid fa-download"></i>
+                Catalogue</a
+              >
+            </div>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+
+      <!-- nav list -->
+      <nav class="navListBar">
+        <!-- close sm menu -->
+        <i class="fa-solid fa-rectangle-xmark closeIcon" id="closeNavList"></i>
+        <div class="container">
+          <ul class="navList">
+            <li class="navitem">
+              <a href="./index.html" class="navLink">HOME</a>
+            </li>
+            <li class="navitem">
+              <a href="./aboutUs.html" class="navLink">ABOUT US</a>
+            </li>
+            <li class="navitem">
+              <a class="navLink active" href="./products.html"> PRODUCTS </a>
+            </li>
+            <li class="dropdown navitem">
+              <a class="navLink" href="./services.html"> SERVICES </a>
+            </li>
+            <li class="navitem">
+              <a href="./quality.html" class="navLink">QUALITY</a>
+            </li>
+            <li class="navitem">
+              <a href="./news.html" class="navLink">NEWS</a>
+            </li>
+            <li class="dropdown navitem">
+              <a class="navLink" href="./contact.html"> CONTACT </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <!-- Hero Section -->
     <section class="heroSection aboutUsHeroSection">
@@ -206,99 +206,102 @@
           <!-- Tabs Navigation -->
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="access-panels-tab" data-bs-toggle="tab" data-bs-target="#access-panels" type="button" role="tab" aria-controls="access-panels" aria-selected="true">
+              <button
+                class="nav-link active"
+                id="access-panels-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#access-panels"
+                type="button"
+                role="tab"
+                aria-controls="access-panels"
+                aria-selected="true"
+              >
                 Access Panels
               </button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="furring-system-tab" data-bs-toggle="tab" data-bs-target="#furring-system" type="button" role="tab" aria-controls="furring-system" aria-selected="false">
+              <button
+                class="nav-link"
+                id="furring-system-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#furring-system"
+                type="button"
+                role="tab"
+                aria-controls="furring-system"
+                aria-selected="false"
+              >
                 Furring System
               </button>
             </li>
             <!-- Add more tabs as needed -->
           </ul>
-        
+
           <!-- Tab Content -->
           <div class="tab-content" id="myTabContent">
             <!-- Access Panels Tab -->
-            <div class="tab-pane fade show active" id="access-panels" role="tabpanel" aria-labelledby="access-panels-tab">
+            <div
+              class="tab-pane fade show active"
+              id="access-panels"
+              role="tabpanel"
+              aria-labelledby="access-panels-tab"
+            >
               <!-- Flush Mounted Panels -->
-              <div class="card my-3">
-                <div class="card-header d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#flush-mounted-panels" aria-expanded="false">
-                  <h5 class="card-title mb-0">Flush Mounted Panels</h5>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-                </div>
-                <div class="collapse" id="flush-mounted-panels">
-                  <div class="card-body">
-                    <p><strong>Technical Details:</strong> Flush-mounted panels are designed for seamless integration with wall and ceiling finishes, providing a clean and unobtrusive appearance.</p>
-                    <ul class="list-unstyled">
-                      <li><strong>Material:</strong> Galvanized steel</li>
-                      <li><strong>Finish:</strong> Powder-coated</li>
-                      <li><strong>Fire Rating:</strong> Non-fire rated</li>
-                    </ul>
-                  </div>
-                  <div class="row p-3">
-                    <div class="col-lg-6">
-                      <img src="./img/img/project_img_1.png" class="img-fluid" alt="Flush Mounted Panels">
+
+              <div class="row g-5">
+                <div class="col-lg-4">
+                  <div class="productContentCard">
+                    <h2 class="productTitle">Access Panels</h2>
+                    <div class="mainText mb-4">
+                      <p>
+                        Our access panels are designed for easy and convenient
+                        access to hidden or hard-to-reach areas, ideal for
+                        installation in walls, ceilings, and floors. They are
+                        essential for providing safe, easy, and convenient
+                        access to hidden areas within buildings. They are
+                        commonly used in Qatar's high-rise buildings, commercial
+                        properties, and residential developments.
+                      </p>
                     </div>
                   </div>
                 </div>
-              </div>
-        
+                <div class="col-lg-4">
+                  <div class="productFeatures">
+                    <ul class="list-unstyled">
+                      <li class="mainText mb-3">
+                        <strong class="d-block">Flush Mount Panels –</strong>
+                        Seamless integration with wall and ceiling finishes.
+                      </li>
+                      <li class="mainText mb-3">
+                        <strong class="d-block"
+                          >Fire Rated Access Panels –</strong
+                        >
+                        High-performance panels designed to withstand high
+                        temperatures.
+                      </li>
+                      <li class="mainText mb-3">
+                        <strong class="d-block"
+                          >Lockable Access Panels –</strong
+                        >
+                        Secure access solutions.
+                      </li>
+                      <li class="mainText mb-3">
+                        <strong class="d-block">Non-fire Rated Panels –</strong>
+                        Cost-effective options for general access needs.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="productImageCard">
+                    <img
+                      src="./img/img/project_img_1.png"
+                      alt="Various Access Panels"
+                      class="productImage"
+                    />
+                  </div>
+                </div>
+              </div> 
               <!-- Fire Rated Access Panels -->
-              <div class="card my-3">
-                <div class="card-header d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#fire-rated-panels" aria-expanded="false">
-                  <h5 class="card-title mb-0">Fire Rated Access Panels</h5>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-                </div>
-                <div class="collapse" id="fire-rated-panels">
-                  <div class="card-body">
-                    <p><strong>Technical Details:</strong> High-performance panels designed to withstand high temperatures, ensuring safety in fire-prone areas.</p>
-                    <ul class="list-unstyled">
-                      <li><strong>Material:</strong> Fire-resistant steel</li>
-                      <li><strong>Fire Rating:</strong> 2 hours</li>
-                      <li><strong>Finish:</strong> Powder-coated</li>
-                    </ul>
-                  </div>
-                  <div class="row p-3">
-                    <div class="col-lg-6">
-                      <img src="./img/img/project_img_2.png" class="img-fluid" alt="Fire Rated Access Panels">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        
-            <!-- Furring System Tab -->
-            <div class="tab-pane fade" id="furring-system" role="tabpanel" aria-labelledby="furring-system-tab">
-              <!-- Galvanized Steel Furring Channels -->
-              <div class="card my-3">
-                <div class="card-header d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#galvanized-channels" aria-expanded="false">
-                  <h5 class="card-title mb-0">Galvanized Steel Furring Channels</h5>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-                </div>
-                <div class="collapse" id="galvanized-channels">
-                  <div class="card-body">
-                    <p><strong>Technical Details:</strong> Corrosion-resistant and strong for long-lasting support in drywall and ceiling installations.</p>
-                    <ul class="list-unstyled">
-                      <li><strong>Material:</strong> Galvanized steel</li>
-                      <li><strong>Thickness:</strong> 0.5mm</li>
-                      <li><strong>Length:</strong> 3m</li>
-                    </ul>
-                  </div>
-                  <div class="row p-3">
-                    <div class="col-lg-6">
-                      <img src="./img/img/project_img_3.png" class="img-fluid" alt="Galvanized Steel Furring Channels">
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
