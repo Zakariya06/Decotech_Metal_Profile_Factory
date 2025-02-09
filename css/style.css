@@ -243,7 +243,7 @@ a {
 }
 .heroSection::after {
   content: "";
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
   left: 0;
@@ -316,7 +316,7 @@ a {
 }
 .heroTextContent .mainText {
   font-size: 1.3rem;
-  color: var(--theme_color);
+  color: rgba(255, 0, 35, 0.8);
   font-weight: 500;
 }
 .heroTextContent .smtext {
@@ -372,7 +372,7 @@ a {
 }
 .productImage {
   width: 100%;
-  height: 100%;
+  height: 250px;
   cursor: pointer;
   object-fit: cover;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -528,7 +528,7 @@ footer .contactIcon {
 
 /* aboutUsHeroSection */
 .aboutUsHeroSection {
-  background-image: url("../img/abtbnr.jpg");
+  background-image: url("../img/img/about_hero_bg.jpg");
   justify-content: flex-start;
   background-repeat: no-repeat;
   background-size: cover;
@@ -568,6 +568,7 @@ footer .contactIcon {
 }
 .ourMissionSection {
   background: #f1f5f8;
+  padding: 3rem 0;
 }
 
 /* buildingSection */
@@ -612,52 +613,50 @@ footer .contactIcon {
   margin-bottom: 1.8rem;
   border-radius: 8px;
 }
-.productsPageSection .productImage {
+.card .productImage {
   width: 100%;
+  height: 300px;
   object-fit: cover;
   box-shadow: none;
 }
+
+.card {
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.card:hover { 
+  background: #f1f5f8;
+}
+.card:hover .productImage {
+  transform: scale(1.03);
+}
+.card-header {
+  cursor: pointer;
+  padding: 1rem 1rem;
+}
+.chevron-icon {
+  transition: transform 0.3s ease-in-out;
+}
+.rotate-icon {
+  transform: rotate(180deg);
+}
+.card-body {
+  height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding: 0;
+  height: 0;
+}
+.card-body.show {
+  height: 100%;
+  transition: max-height 0.3s ease-in;
+  padding: 1.25rem;
+}
 .productTitle {
   color: var(--btn_color);
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 600;
-}
-.buttonContainer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  background: rgba(139, 0, 0, 0.9);
-}
-.viewButton {
-  background: white;
-  color: var(--btn_color);
-  border: none;
-  padding: 5px 15px;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: all 0.2s ease;
-}
-.viewButton:hover {
-  background: var(--theme_color);
-  color: var(--main_color);
-}
-
-/* quality page  */
-.qualityHeroSection {
-  padding: 7rem 0;
-  background-image: url("../img/quality-bg1.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-}
-.subHeading {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #fff;
 }
 
 /* certificateSection */
