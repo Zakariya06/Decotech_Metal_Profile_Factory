@@ -803,3 +803,45 @@ footer .contactIcon {
   width: 100%;
   height: 400px;
 }
+
+/* product Cards */
+.productsRowContainer {
+  background: #709ccd;
+  padding: 2rem 1rem;
+  border-radius: 17px;
+}
+.poductCard {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border: 1px solid var(--btn_color);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.poductImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.2s ease;
+}
+.poductCard:hover .poductImage {
+  transform: scale(1.1);
+}
+.cardTitle {
+  font-size: 1.3rem;
+  color: var(--btn_color);
+  padding: 0.4rem 0.4rem;
+  background: #ccc;
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.emtyBox {
+  width: 100%;
+  height: 400px;
+  background: #cccccc;
+  border-radius: 8px;
+}
