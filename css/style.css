@@ -615,9 +615,6 @@ footer .contactIcon {
   box-shadow: none;
 }
 
-.tab-content {
-  padding: 4rem 0;
-}
 .productTitle {
   color: var(--btn_color);
   font-size: 1.7rem;
@@ -844,4 +841,18 @@ footer .contactIcon {
   height: 400px;
   background: #cccccc;
   border-radius: 8px;
+}
+
+.productsRowContainer .nav-tabs {
+  border: none;
+  background: var(--btn_color);
+  padding: 0.4rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.productsRowContainer .nav-link {
+  border-radius: 8px;
+  padding: 0.5rem 1.3rem;
+  font-size: 1rem;
+  color: #fff;
 }
