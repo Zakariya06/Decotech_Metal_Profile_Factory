@@ -202,4 +202,7 @@
     font-size: 1rem;
     bottom: 7%;
   }
+  .productDetails{
+    display: none;
+  }
 }

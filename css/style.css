@@ -856,3 +856,12 @@ footer .contactIcon {
   font-size: 1rem;
   color: #fff;
 }
+
+
+/* product card toggles */
+.productCardContent {
+  display: none;
+}
+.productCardContent.active {
+  display: block;
+}
