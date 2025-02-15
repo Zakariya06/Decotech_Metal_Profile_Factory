@@ -865,3 +865,10 @@ footer .contactIcon {
 .productCardContent.active {
   display: block;
 }
+
+
+.productImageInner{
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
