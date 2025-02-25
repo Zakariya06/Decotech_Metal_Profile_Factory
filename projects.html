@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - Decotech Metal Profile Factory</title>
+    <title>Projects - Decotech Metal Profile Factory</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
@@ -22,10 +22,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
     />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsve.css" />
   </head>
-
   <body class="homeBodyBgImage">
     <!-- header -->
     <header class="Header">
@@ -165,11 +169,11 @@
             <li class="navitem">
               <a class="navLink" href="./products.html"> PRODUCTS </a>
             </li>
-            <li class="dropdown navitem">
+            <li class="navitem">
               <a class="navLink" href="./services.html"> SERVICES </a>
             </li>
             <li class="navitem">
-              <a class="navLink" href="./projects.html"> PROJECTS </a>
+              <a class="navLink active" href="./projects.html"> PROJECTS </a>
             </li>
             <li class="navitem">
               <a href="./quality.html" class="navLink">QUALITY</a>
@@ -178,119 +182,85 @@
               <a href="./news.html" class="navLink">NEWS</a>
             </li>
             <li class="dropdown navitem">
-              <a class="navLink active" href="./contact.html"> CONTACT </a>
+              <a class="navLink" href="./contact.html"> CONTACT </a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <!-- new hero section -->
-    <section class="contactMapSection">
+    <section class="projectPageSection">
       <div class="container">
-        <iframe
-          class="mapIframe"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.2997188907993!2d51.4020051!3d25.1593557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45d6922d1f69f9%3A0x96269262a46f75af!2sDECOTECH%20METAL%20PROFILE%20FACTORY!5e0!3m2!1sen!2s!4v1739029830555!5m2!1sen!2s"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </section>
+        <div class="projectImageSection">
+          <h1 class="mdHeading">CITYNEON</h1>
+          <p class="mainText">
+            <strong> MAIN CONTRACTOR: </strong>&nbsp; AMANA.
+          </p>
 
-    <section class="contactSection bg-white">
-      <div class="container">
-        <div class="row align-items-center g-4">
-          <!-- Company Information -->
-          <div class="col-md-6">
-            <div class="companyInfo">
-              <h1 class="mdHeading">
-                Get in Touch with Decotech Metal Profile Factory
-              </h1>
-              <p class="mainText">
-                Have questions or need more information? Our team is here to
-                assist you with your metal profile needs, whether you’re
-                inquiring about our products, services, or custom orders.
-              </p>
-              <div class="mb-4">
-                <a
-                  href="https://www.google.com/maps/search/?api=1&query=Building+No.51,+Street+No.8,+Zone+No.81+New+Industrial+Area,+Doha,+Qatar"
-                  class="contactItem"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fas fa-map-marker-alt contactIcon"></i>
-                  Building No.51, Street No.8, Zone No.81 New Industrial Area,
-                  Doha, Qatar
-                </a>
+          <img
+            src="./img/projectPage/project_section_1.png"
+            alt="project"
+            class="projectImage mt-4"
+          />
+        </div>
 
-                <a href="tel:+97440012053" class="contactItem">
-                  <i class="fas fa-phone-alt contactIcon"></i>
-                  Ph: +974-40012053
-                </a>
+        <div class="projectImageSection">
+          <h1 class="mdHeading">VENDOME MALL</h1>
+          <p class="mainText"><strong> MAIN CONTRACTOR: </strong>&nbsp; CRC.</p>
 
-                <a href="fax:+97440012053" class="contactItem">
-                  <i class="fas fa-fax contactIcon"></i>
-                  Fax: +974-40012053
-                </a>
+          <img
+            src="./img/projectPage/project_section_2.png"
+            alt="project"
+            class="projectImage mt-4"
+          />
+        </div>
 
-                <a
-                  href="mailto:profilefactory@decotechqatar.com"
-                  class="contactItem"
-                >
-                  <i class="fas fa-envelope contactIcon"></i>
-                  Email: profilefactory@decotechqatar.com
-                </a>
-              </div>
-            </div>
-          </div>
+        <div class="projectImageSection">
+          <h1 class="mdHeading">QETAIFAN</h1>
+          <p class="mainText"><strong> MAIN CONTRACTOR: </strong>&nbsp; JTC.</p>
 
-          <!-- Contact Form -->
-          <div class="col-md-6">
-            <div class="contactForm">
-              <h2 class="formTitle">SEND US A MESSAGE</h2>
-              <form>
-                <div class="row g-3">
-                  <div class="col-md-12">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="*Name"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-12">
-                    <input
-                      type="email"
-                      class="form-control"
-                      placeholder="*Email Address"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-12">
-                    <input
-                      type="tel"
-                      class="form-control"
-                      placeholder="*Phone No."
-                      required
-                    />
-                  </div>
-                  <div class="col-12">
-                    <textarea
-                      class="form-control"
-                      rows="5"
-                      placeholder="Message"
-                      required
-                    ></textarea>
-                  </div>
-                  <div class="col-12 text-center">
-                    <button type="submit" class="loadMore">Send Message</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+          <img
+            src="./img/projectPage/project_section_3.png"
+            alt="project"
+            class="projectImage mt-4"
+          />
+        </div>
+
+        <div class="projectImageSection">
+          <h1 class="mdHeading">SCHOOL</h1>
+          <p class="mainText"><strong> MAIN CONTRACTOR: </strong>&nbsp; JTC.</p>
+
+          <img
+            src="./img/projectPage/project_section_4.png"
+            alt="project"
+            class="projectImage mt-4"
+          />
+        </div>
+
+        <div class="projectImageSection">
+          <h1 class="mdHeading">MERCEDES COMMERCIALCOMPLEX</h1>
+          <p class="mainText">
+            <strong> MAIN CONTRACTOR: </strong>&nbsp; NICC.
+          </p>
+
+          <img
+            src="./img/projectPage/project_section_5.png"
+            alt="project"
+            class="projectImage mt-4"
+          />
+        </div>
+
+        <div class="projectImageSection">
+          <h1 class="mdHeading">WOQOD</h1>
+          <p class="mainText">
+            <strong> MAIN CONTRACTOR: </strong>&nbsp; CDCT.
+          </p>
+
+          <img
+            src="./img/projectPage/project_section_6.png"
+            alt="project"
+            class="projectImage mt-4"
+          />
         </div>
       </div>
     </section>
@@ -431,6 +401,5 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="./js/script.js"></script>
   </body>
 </html>
