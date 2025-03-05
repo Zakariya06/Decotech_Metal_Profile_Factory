@@ -215,4 +215,19 @@
   .projectImageSection .mainText {
     font-size: 0.9rem;
   }
+
+  /* quickEnquiries */
+.quickEnquiries {
+  padding: 2rem 0;
+} 
+.inquireFormCol{ 
+  padding: 1.5rem 1rem; 
+}
+
+.inquireFormCol .subHeading {
+  font-size: 1.1rem; 
+} 
+.inquireFormCol  .form-control{  
+  padding: 0.6rem 0.8rem;
+} 
 }

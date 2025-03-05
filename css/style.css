@@ -888,3 +888,40 @@ footer .contactIcon {
 .projectImageSection {
   margin-bottom: 8rem;
 }
+
+/* quickEnquiries */
+.quickEnquiries {
+  padding: 8rem 0;
+}
+.equireBtns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.equireBtns .loadMore {
+  width: auto;
+  margin: 0;
+}
+.inquireFormCol{
+  width: 100%;
+  padding: 4rem;
+  background: #f9f3e9;
+  border-radius: 10px;
+}
+
+.inquireFormCol .subHeading {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+} 
+.inquireFormCol  .form-control{ 
+  margin-bottom: 0.6rem;
+  margin-top: 0.3em;
+  padding: 0.7rem 1rem;
+}
+.inquireFormCol label{
+  font-size: 0.9rem;
+  font-weight: 500;
+}
